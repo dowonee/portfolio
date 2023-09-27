@@ -28,6 +28,7 @@
     <!--Javascript-->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
   </head>
   <body>
     <!--Header-->
@@ -41,8 +42,8 @@
 
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a class="header__menu__item active" href="#home">Home</a></li>
-          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a onclick="goToScroll('home')" class="header__menu__item active" href="#home">Home</a></li>
+          <li><a onclick="goToScroll('about')" class="header__menu__item" href="#about">About</a></li>
           <li><a class="header__menu__item" href="#skills">Skills</a></li>
           <li><a class="header__menu__item" href="#work">My work</a></li>
           <li><a class="header__menu__item" href="#testimoial">Testimoials</a></li>
@@ -251,7 +252,7 @@
    </div>
       </section>
       <!--Testimoials-->
-      <section id="testimoial" class="section max-container">
+      <section id="testimonial" class="section max-container">
         <h2 class="title">Testimonial</h2>
         <p class="description">See what they say about me</p>
         <ul class="testimonials">
